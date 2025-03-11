@@ -1,1 +1,1 @@
-Estudo de sql
+Estudo de sql, usando express e pg
