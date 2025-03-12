@@ -51,7 +51,7 @@ const options = {
       },
     },
     paths: {
-      '/produtos': {
+      '/api/produtos': {
         post: {
           summary: 'Cria um novo produto',
           tags: ['Produtos'],
@@ -104,7 +104,7 @@ const options = {
           },
         },
       },
-      '/produtos/{productId}': {
+      '/api/produtos/{productId}': {
         put: {
           summary: 'Atualiza um produto existente',
           tags: ['Produtos'],
