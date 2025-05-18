@@ -1,0 +1,11 @@
+node_modules
+*swagger*
+npm-debug.log
+Dockerfile
+.dockerignore
+.babelrc
+babel.config.json
+*.test.js
+tests/
+docs/
+!.env.example
