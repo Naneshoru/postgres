@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "build": "babel src -d dist",
+    "build": "rimraf ./dist && babel src -d dist",
+    "build:dev": "rimraf ./dist && babel src -d dist --source-maps inline",
+    "build:prod": "rimraf ./dist && babel src -d dist --no-source-maps",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,7 +18,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "pg": "^8.14.0"
+    "pg": "^8.14.0",
+    "rimraf": "^6.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.27.2",
